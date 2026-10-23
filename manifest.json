@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dashboard Plus for Roblox",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Extra tools for the Roblox Creator Dashboard, like downloading any place version from version history.",
   "icons": {
     "16": "icons/icon16.png",
