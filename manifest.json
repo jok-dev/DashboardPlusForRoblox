@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Dashboard Plus for Roblox",
+  "version": "1.0.0",
+  "description": "Extra tools for the Roblox Creator Dashboard, like downloading any place version from version history.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["downloads"],
+  "host_permissions": ["https://assetdelivery.roblox.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://create.roblox.com/*"],
+      "js": ["features/versionHistoryDownload.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
